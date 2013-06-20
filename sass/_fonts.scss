@@ -1,0 +1,147 @@
+/******************************************************************
+Site Name: Purple Paisley Productions
+Author: Brianna Kirkland
+
+Stylesheet: Fonts
+
+Set @font-face sources for entire site. Needs to be imported before
+variables are set for base fonts.
+******************************************************************/
+
+/*********************
+FONT-FACE DECLARATIONS
+*********************/
+
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the 
+	fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('../fonts/font-name.eot');
+    	src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/font-name.woff') format('woff'),
+             url('../fonts/font-name.ttf') format('truetype'),
+             url('../fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+
+
+// Fontin Sans section
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+
+@font-face {
+    font-family: 'fontin_sans_regular';
+    src: url('../fonts/fontin_sans_r_45b-webfont.eot');
+    src: url('../fonts/fontin_sans_r_45b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin_sans_r_45b-webfont.woff') format('woff'),
+         url('../fonts/fontin_sans_r_45b-webfont.ttf') format('truetype'),
+         url('../fonts/fontin_sans_r_45b-webfont.svg#fontin_sans_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontin_sans_bold_italic';
+    src: url('../fonts/fontin_sans_bi_45b-webfont.eot');
+    src: url('../fonts/fontin_sans_bi_45b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin_sans_bi_45b-webfont.woff') format('woff'),
+         url('../fonts/fontin_sans_bi_45b-webfont.ttf') format('truetype'),
+         url('../fonts/fontin_sans_bi_45b-webfont.svg#fontin_sans_rgbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontin_sans_bold';
+    src: url('../fonts/fontin_sans_b_45b-webfont.eot');
+    src: url('../fonts/fontin_sans_b_45b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin_sans_b_45b-webfont.woff') format('woff'),
+         url('../fonts/fontin_sans_b_45b-webfont.ttf') format('truetype'),
+         url('../fonts/fontin_sans_b_45b-webfont.svg#fontin_sans_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontin_sans_italic';
+    src: url('../fonts/fontin_sans_i_45b-webfont.eot');
+    src: url('../fonts/fontin_sans_i_45b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin_sans_i_45b-webfont.woff') format('woff'),
+         url('../fonts/fontin_sans_i_45b-webfont.ttf') format('truetype'),
+         url('../fonts/fontin_sans_i_45b-webfont.svg#fontin_sans_rgitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontin_sans_small_caps';
+    src: url('../fonts/fontin_sans_sc_45b-webfont.eot');
+    src: url('../fonts/fontin_sans_sc_45b-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin_sans_sc_45b-webfont.woff') format('woff'),
+         url('../fonts/fontin_sans_sc_45b-webfont.ttf') format('truetype'),
+         url('../fonts/fontin_sans_sc_45b-webfont.svg#fontin_sans_scsmall_caps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+// Fontin section (serif)
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+
+@font-face {
+    font-family: 'fontin_italic';
+    src: url('../fonts/fontin-italic-webfont.eot');
+    src: url('../fonts/fontin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin-italic-webfont.woff') format('woff'),
+         url('../fonts/fontin-italic-webfont.ttf') format('truetype'),
+         url('../fonts/fontin-italic-webfont.svg#fontinitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'fontin_regular';
+    src: url('../fonts/fontin-regular-webfont.eot');
+    src: url('../fonts/fontin-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin-regular-webfont.woff') format('woff'),
+         url('../fonts/fontin-regular-webfont.ttf') format('truetype'),
+         url('../fonts/fontin-regular-webfont.svg#fontinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'fontin_bold';
+    src: url('../fonts/fontin-bold-webfont.eot');
+    src: url('../fonts/fontin-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin-bold-webfont.woff') format('woff'),
+         url('../fonts/fontin-bold-webfont.ttf') format('truetype'),
+         url('../fonts/fontin-bold-webfont.svg#fontinbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'fontin_smallcaps';
+    src: url('../fonts/fontin-smallcaps-webfont.eot');
+    src: url('../fonts/fontin-smallcaps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin-smallcaps-webfont.woff') format('woff'),
+         url('../fonts/fontin-smallcaps-webfont.ttf') format('truetype'),
+         url('../fonts/fontin-smallcaps-webfont.svg#fontin_smallcapsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

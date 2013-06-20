@@ -1,0 +1,356 @@
+<!doctype html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+
+<head>
+  <meta charset="utf-8">
+
+  
+ 
+ 
+
+  <title>Portfolio - Purple Paisley Productions</title>
+  <meta name="description" content="Check out some of the web design and development work done by Purple Paisley Productions.">
+  
+  
+  
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+  
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+<link rel="address bar icon" href="favicon.ico" />
+<link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+<!-- <link href="css/main.css" rel="stylesheet" type="text/css" /> -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+<!-- JavaScript -->
+<script src="js/modernizr-2.5.3-min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  
+  <script>
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+</script>
+
+ <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+
+
+</head>
+
+
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  
+
+  <!-- Add your site or application content here -->
+
+<div id="container">
+<header>
+
+	<h1><a href="index.html" title="Back to Home">Purple Paisley Portfolio</a></h1>
+	  
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html" title="back to the welcome page">home</a></li>
+    <li>&nbsp;&middot;&nbsp;</li>
+    
+    <li><a href="biography.html" title="a little about me and my history">about</a></li>
+    <li>&nbsp;&middot;&nbsp;</li>
+
+    <li><a href="portfolio.html" title="see some examples of my work" class="current">portfolio</a></li>
+    <li>&nbsp;&middot;&nbsp;</li>
+
+    <li><a href="contact.html" title="get in touch with me">contact</a></li>
+    </ul>
+  </nav>
+
+<section>
+
+	<article>
+	<!--
+
+	<h2>Communication Design Portfolio</h2>
+	
+	<p>Here is a sampling of the work I did this semester in Communication Design. We had eight assignments, the parameters of which are outlined below, followed by links to the full screen images.</p>
+-->
+	
+<ul class="rslides" id="slider1">
+  <li><img src="img/slide2.jpg" alt=""></li>
+  <li><img src="img/slide3.jpg" alt=""></li>
+  <li><img src="img/slide4.jpg" alt=""></li>
+  <li><img src="img/slide5.jpg" alt=""></li>
+  <li><img src="img/slide6.jpg" alt=""></li>
+  <li><img src="img/slide7.jpg" alt=""></li>
+</ul>
+	
+<!--
+	<div id="slider">
+			<ul>
+				<li><img src="img/photography1.jpg" alt="My Photography Work" /></a></li>
+				<li><img src="img/photography2.jpg" alt="My Photography Work" /></a></li>
+				<li><img src="img/photography3.jpg" alt="My Photography Work" /></a></li>
+				<li><img src="img/photography4.jpg" alt="My Photography Work" /></a></li>
+				<li><img src="img/photography5.jpg" alt="My Photography Work" /></a></li>				
+				<li><img src="img/sliderStrips-comdes1a.png" alt="Communication Design Project 1" /></a></li>
+				<li><img src="img/sliderStrips-comdes2.jpg" alt="Communication Design Project 2" /></a></li>
+				<li><img src="img/sliderStrips-comdes3.png" alt="Communication Design Project 3" /></a></li>
+				<li><img src="img/sliderStrips-comdes4.png" alt="Communication Design Project 4" /></a></li>
+				<li><img src="img/sliderStrips-comdes5.png" alt="Communication Design Project 5" /></a></li>
+				<li><img src="img/sliderStrips-comdes6.png" alt="Communication Design Project 6" /></a></li>
+				<li><img src="img/sliderStrips-comdes7.jpg" alt="Communication Design Project 7" /></a></li>
+				<li><img src="img/sliderStrips-comdes8.png" alt="Communication Design Project 8" /></a></li>
+			</ul>
+</div>
+-->
+
+      
+      <!--
+<h3>Symmetry and Asymmetry</h3>
+      
+      <ol>
+      	<li>Working in a 6 x 6 inch square, arrange three of four geometric elements (circles, squares, rectangles, triangles, etc) in a symme- trical way. Start with variations in which all the elements are the same size, then create symmetrical designs with elements of diffe- rent size. Experiment with scale and cropping.</li>
+		<li>Create asymmetrical designs using forms of different sizes. Experiment until you find visual balance in each composition. For example, use several small elements to offset one larger one.</li>
+		<li>Many variations are possible. Introduce contrasts of color or value. Create a simple animation of one or more designs; make a stable design become active, or bring order to a seemingly random arrangement.</li> 
+      </ol>
+      
+      <p><a href="img/comdes1a-lg.png" rel="lightbox[symmetry]" title="Symmetry and Asymmetry">Image 1</a> | <a href="img/comdes1b-lg.png" rel="lightbox[symmetry]" title="Symmetry and Asymmetry">Image 2</a> | <a href="img/comdes1c-lg.png" rel="lightbox[symmetry]" title="Symmetry and Asymmetry">Image 3</a></p>
+       
+	      
+      
+       
+      <h3>Found Rhythms</h3>
+
+      <ol>
+      	<li>Cut a .5-inch square cleanly through a magazine, yielding dozens of unexpected compositions. Select ten of these small squares to use as imagery in an accordion book.</li>
+      	<li>Scan the squares at 200% and place them into a page layout file (formatted in 5-inch-square pages). Pair the images with a text gathered from Wikipedia.</li>
+      	<li>Create a visual "story" by considering the pacing and scale of the images and text within each spread and accross the entire sequence.</li>
+      </ol>
+      
+      <p><a href="img/comdes2a-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 1</a> | <a href="img/comdes2b-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 2</a> | <a href="img/comdes2c-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 3</a> | <a href="img/comdes2d-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 4</a> | <a href="img/comdes2e-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 5</a> | <a href="img/comdes2f-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 6</a> | <a href="img/comdes2g-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 7</a> | <a href="img/comdes2h-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 8</a> | <a href="img/comdes2i-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 9</a> | <a href="img/comdes2j-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Slide 10</a> | <a href="img/comdes2full-lg.jpg" rel="lightbox[rhythm]" title="Found Rhythms">Full Image</a></p>
+        
+      
+        
+      <h3>Scale, Depth, and Motion</h3>
+
+
+      <ol>
+      	<li>Create a list of words that have opposite meanings, such as inside/outside, come/go, empty/full, and more/less.</li>
+      	<li>Choose a pair of words from the list. Using the typeface Futura Bold, manipulate the scale and placement of the words in order to express their meaning. How does the meaning of one word depend on that of its opposite? Employ contrasts in scale to emphasize the conflict between the words. Compose your work in a 6-x-6-inch square. Consider the full space of the square in your composition.</li>
+      	<li>Discuss work and make refinements based on feedback.</li>
+      </ol>
+      
+      <p><a href="img/comdes3a-lg.png" rel="lightbox[opposites]" title="Scale, Depth and Motion">Image 1</a> | <a href="img/comdes3c-lg.png" rel="lightbox[opposites]" title="Scale, Depth and Motion">Image 2</a></p>
+         
+        
+        
+ 
+      <h3>Five Squares Ten Inches</h3>
+
+      <ol>
+      	<li>Create five justified squares of text, each with its own visual texture. Produce variations of value, density, and transparency by using different type styles (old style italic serifs, uniformly weighted sans serifs, geometric slab serifs, text set entirely in capital letters, and so on). Adjust the light to dark value (typographic color) of each square by changing letterspacing, paragraph leading, and other attributes.</li>
+      	<li>Arrange the five blocks of text inside a ten-inch square. Mannipulate the scale and placement of the squares to achieve compositional balance, tension, and depth. Squares can bleed off the edges to reinforce the illusion of amplification and recession.</li>
+      </ol>
+      
+      <p><a href="img/comdes4-lg.png" rel="lightbox" title="Five Squares Ten Inches">Image 1</a></p>
+  
+ 
+ 
+      
+ 
+      <h3>Letterform Abstraction</h3>
+
+      <ol>
+      	<li>Working within a 6-x-6-inch square, create compositions using a single leterform. Examine the forms and counterforms of the letter.</li>
+      	<li>Isolate just enough of each letter to hint at its identity. Strike a balance between positive and negative space.</li>
+      	<li>Create six or more compositions.</li>
+      </ol>
+      
+      <p><a href="img/comdes5a-lg.png" rel="lightbox[figureGround]" title="Letterform Abstractions">Image 1</a> | <a href="img/comdes5b-lg.png" rel="lightbox[figureGround]" title="Letterform Abstractions">Image 2</a> | <a href="img/comdes5c-lg.png" rel="lightbox[figureGround]" title="Letterform Abstractions">Image 3</a> | <a href="img/comdes5d-lg.png" rel="lightbox[figureGround]" title="Letterform Abstractions">Image 4</a> | <a href="img/comdes5e-lg.png" rel="lightbox[figureGround]" title="Letterform Abstractions">Image 5</a> | <a href="img/comdes5f-lg.png" rel="lightbox[figureGround]" title="Letterform Abstractions">Image 6</a></p>
+  
+      
+      
+ 
+      <h3>Menu of Options</h3>
+      
+      <ol>
+	      <li>Find a menu from a local restaurant. Copy the content into a page layout file.</li>
+	      <li>Break up the content into larger and smaller parts. Employ scale. placement, alignment, type style, and other cues to create visual order.</li>
+	      <li>In addition to creating a logical and legible order, seek to impart the information with a distinctive and engaging visual identity.</li>
+      </ol>
+      
+      <p><a href="img/comdes6-lg.png" rel="lightbox" title="Menu of Options">Image 1</a></p>
+  
+ 
+  
+
+      <h3>Typographic Layers</h3>
+
+
+      <ol>
+      	<li>In everyday life as well as in films and animations, multiple stories unfold simultaneously. Begin this typographic exercise by creating three texts that describe three narratives unfolding simultaneously during a short period of time.</li>
+      	<li>Download the text</li>
+      	<li>Devise ways to represent all three stories on the same surface. Working within an 8-x-8-inch square, use typography, icons, lines, and other elements. Whether the final piece is an easy-to-follow transcription or a poetic depiction, construct distinct layers or visual channels. Each story has its own layer.</li>
+      </ol>
+      
+      <p><a href="img/comdes7-lg.jpg" rel="lightbox" title="Typographic Layers">Image 1</a></p>
+   
+  
+   
+
+      <h3>Modular Alphabet</h3>
+      
+      <ol>
+	      <li>In Illustrator, create a set of shapes from which to build a complete alphabet: a square (each side equals one unit), a rectangle (one unit by two units), and a quarter–circle (radius equals one unit)</li>
+	      <li>Cut and paste to create letterforms. Shapes can be assembled any way you like, but do not change their scale relative to each other.</li>
+	      <li>Forms can be dense and solid or open and split apart.</li>
+      </ol>
+      
+      <p><a href="img/comdes8-lg.png" rel="lightbox" title="Modular Alphabet">Image 1</a></p>
+    
+-->
+      
+      <!--
+<p>Here is my most recent project: a music video edited using Final Cut Pro. I've used the song, "Something About Us" by Daft Punk, and video from the movie, "5 Centimeters Per Second." It was just accepted into the student showcase, so come support me Monday, December 13th at 6 pm at the St. Francis Theatre.</p>
+     
+     
+      <p> <embed src="media/SomethingAbout5Centimeters-YouTube.mov" width="640" height="500" autostart="no"></embed><br /><span class="vidCaption">Something About 5 Centimeters</span></p>
+-->
+	
+	
+</article>
+    
+<footer>
+  <div id="footerLinks">
+	<!-- <p class="students"><a href="http://sfcc.purplepaisleyproductions.com/" class="button" target="_blank" title="Class Homepage for SFCC Students taking my classes">SFCC STUDENTS</a></p> -->
+  </div>
+	
+	<p>&copy; 2012 Purple Paisley Productions</p>
+
+</footer>
+
+</section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+
+
+
+<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2196019-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+
+
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- end scripts -->
+
+  <!--Google Analytics -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23344824-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

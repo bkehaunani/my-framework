@@ -1,0 +1,104 @@
+/******************************************************************
+Site Name: Purple Paisley Productions
+Author: Brianna Kirkland
+URL: http://www.purplepaisleyproductions.com
+
+Stylesheet: Main Stylesheet
+
+Here we organize our media queries and setup our main stylesheet.
+******************************************************************/
+
+/* import reset */
+@import "normalize";
+
+/* import variables & mixins */
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+/* import typography settings  */			
+
+@import "typography";
+
+/* ELEMENTS  */
+
+// Figures, images and other elements
+@import "elements";
+
+// Standard form controls
+@import "forms";
+
+
+/* Site wide styles (html, body) */
+@import "site";
+
+/* VENDOR SPECIFIC  */
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************
+BASE (MOBILE) SIZE 
+******************************************************************/
+
+@import "base";
+
+/******************************************************************
+TABLET & SMALLER LAPTOPS
+******************************************************************/
+
+@media only screen and (min-width: 768px) {
+	@import "768up";
+} /* end of media query */
+
+/******************************************************************
+DESKTOP 
+This is the average viewing window. So Desktops, Laptops, and 
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+******************************************************************/
+
+@media only screen and (min-width: 1030px) {
+	@import "1030up";
+} /* end of media query */
+
+/******************************************************************
+LARGE VIEWING SIZE 
+This is for the larger monitors and possibly full screen viewers.
+******************************************************************/
+
+@media only screen and (min-width: 1382px) {
+	@import "1382up";
+} /* end of media query */
+
+/******************************************************************
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with 
+other displays with a 2x resolution. 
+******************************************************************/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+	@import "2x"; 
+} /* end of media query */
+
+
+/******************************************************************
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+******************************************************************/
+
+@media print { 
+	@import "print";
+} /* end print media query */
+

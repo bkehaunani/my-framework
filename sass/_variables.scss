@@ -1,0 +1,202 @@
+/******************************************************************
+Site Name: Purple Paisley Productions
+Author: Brianna Kirkland
+
+Stylesheet: Variables
+
+These are used throughout the site and contain things like 
+colorschemes, font stacks, etc. It's called right after the 
+normalize stylesheet.
+******************************************************************/
+
+
+/*********************
+COLORS
+*********************/
+
+
+// greyscale
+
+$black 			: rgb(0,0,0);
+$darkgrey 		: lighten($black, 25%);
+$grey 			: lighten($black, 50%);
+$lightgrey 		: lighten($black, 75%);
+$lightergrey 	: lighten($black, 90%);
+$white 			: rgb(255,255,255);
+
+// site-wide color scheme
+
+$dkpurple: #3e1b68;
+$medpurple: #544195;
+$ltpurple: #b6b0d5;
+$pink: #ca0f89;
+$blue: #5cbae1;
+$green: #8ec06c;
+
+
+$rgbdkpurple: rgb(62,27,104);
+$rgbmedpurple: rgb(84,65,149);
+$rgbltpurple: rgb(182,176,213);
+$rgbpink: rgb(202,15,137);
+$rgbblue: rgb(92,186,225);
+$rgbgreen: rgb(142,192,108);
+
+
+$bodycolor : $dkpurple;
+$textcolor : $dkpurple;
+
+$basecolor 		: $rgbmedpurple;    // original template used RGB colors here
+$compcolor 		: adjust-hue($basecolor, 180);
+$bordercolor    : lighten($basecolor, 60%);
+
+// Links
+
+$linkcolor 		    : $rgbpink;   // original template used RGB colors here
+$linkcolorhover 	: darken($linkcolor, 10);
+$linkcolorvisited   : darken($linkcolorhover, 10);
+$linkcolorfocus 	: darken($linkcolorvisited, 10);
+
+// colour palettes
+
+$alertcolor 	: $rgbmedpurple;
+$errorcolor 	: $rgbpink;
+$infocolor 		: $rgbblue;
+$inverscolor 	: $rgbblue;
+$successcolor 	: $rgbgreen;
+$warningcolor 	: $rgbmedpurple;
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+$sans-serif:        "fontin_sans_regular", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+$serif:             "fontin_regular", Cambria, Georgia, Times, "Times New Roman", serif;
+
+
+$basefont : $sans-serif;
+$basefontsize : 16;
+$baselineheight : 1.5em;
+
+$baseheadingfont : "fontin_regular", Cambria, Georgia, Times, "Times New Roman", serif;
+$baseheadingfontweight : bold;
+$baseheadingfontcolor : inherit;
+
+$altfont : $sans-serif;
+$altlineheight : 1.35em;
+
+$codefont : Monaco, Courier New, monospace;
+
+
+
+/*********************
+TEXTURE 
+*********************/
+
+// alert
+
+$alertbordercolor	: darken($alertcolor, 20%);
+$alertborderwidth 	: 1px;
+$alertborderstyle 	: solid;
+$alerttext			: darken($alertcolor, 60%);
+
+// alert-error
+$alerterrorcolor 	: lighten($errorcolor, 30%);
+$alerterrorborder  	: lighten($errorcolor, 20%);
+$alerterrortext 	: $errorcolor;
+
+// alert-info
+$alertinfocolor 	: $infocolor;
+$alertinfoborder  	: lighten($infocolor, 20%);
+$alertinfotext 		: darken($infocolor, 50%);
+
+// alert-inverse
+$alertinversecolor 	: $inverscolor;
+$alertinverseborder : $black;
+$alertinversetext 	: $white;
+
+// alert-success
+$alertsuccesscolor 	: lighten($successcolor, 30%);
+$alertsuccessborder : lighten($successcolor, 20%);
+$alertsuccesstext 	: darken($successcolor, 20%);
+
+// alert-warning
+$alertwarningcolor 	: lighten($warningcolor, 30%);
+$alertwarningborder : lighten($warningcolor, 20%);
+$alertwarningtext 	: darken($warningcolor, 20%);
+
+// badges
+
+$badgebackground 	: $ltpurple;
+$badgecolor 		: $dkpurple;
+
+// buttons
+
+$buttonbackground 	: $ltpurple;
+$buttonbordercolor 	: darken($buttonbackground, 10%);
+$buttonbottombordercolor : darken($buttonbordercolor, 10%);
+$buttoncolor 		: $dkpurple;
+$buttonborderwidth	: 1px;
+$buttonborderstyle	: solid;
+
+// boxes (well)
+
+$wellbackground		: lighten($basecolor, 75%);
+$wellbordercolor	: darken($wellbackground, 20%);
+$wellborderwidth	: 1px;
+$wellborderstyle	: solid;
+$wellshadow			: darken($wellbackground, 10%);
+$wellshadowblur		: 10px;
+
+// stiching
+$stich: 1px dashed $ltpurple;    
+
+/*********************
+ELEMENTS
+*********************/
+
+// tables
+
+$tablebackground 	: transparent;
+$tablestripe 		: lighten($basecolor, 60%);
+$tablehover 		: lighten($basecolor, 50%);
+$tableborder 		: lighten($basecolor, 40%);
+$tableborderwidth	: 1px;
+$tableborderstyle	: solid;
+
+// forms
+
+$inputbackground 	: $white;
+$inputborder 		: lighten($basecolor, 40%);
+$inputborderwidth	: 1px;
+$inputborderstyle	: solid;
+$inputhover 		: lighten($basecolor, 20%);
+$inputfocus 		: $basecolor, 40%;
+$placeholdercolor 	: $lightgrey;
+
+
+/*********************
+LAYOUT 
+*********************/
+
+$baseline : $baselineheight;
+$gutterwidth : 24px;
+
+
+
+
+/*********************
+VENDOR-SPECIFIC  
+*********************/
+
+
+
+/*********************
+ MODERNIZR 
+*********************/
+
+
+
+/*********************
+TEMPLATE SPECIFICS
+*********************/
+

@@ -1,0 +1,364 @@
+/******************************************************************
+Site Name: Purple Paisley Productions
+Author: Brianna Kirkland
+
+Stylesheet: Mixins
+
+These are used throughout the site and contain things like 
+CSS3 techniques, buttons, forms, grid info, ect. It's called 
+right after the variables stylesheet.
+******************************************************************/
+
+/*********************
+CLEARFIXIN'
+*********************/
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.clearfix { 
+	&:before,
+	&:after {
+		content: "";
+    	display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	zoom: 1; 
+}
+
+/*********************
+TOOLS
+*********************/
+
+/* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+.image-replacement {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* text alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+
+/* alerts & notices */
+.alert { 
+	margin: 10px; 
+	padding: 5px 18px; 
+	border: 1px solid; 
+}
+
+.help { 
+	border-color: darken($medpurple, 5%); 
+	background: $medpurple; 
+}
+
+.info { 
+	border-color: darken($blue, 5%); 
+	background: $blue; 
+}
+
+.error { 
+	border-color: darken($pink, 5%); 
+	background: $pink; 
+}
+
+.success { 
+	border-color: darken($green, 5%); 
+	background: $green; 
+} 
+
+/*********************
+BORDER RADIUS
+*********************/
+
+/* @include borderRadius(4px); */
+@mixin borderRadius($radius: 4px) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	    -ms-border-radius: $radius;
+   	     -o-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+/* @include borderTopRadius(4px); */
+@mixin borderTopRadius($radius: 4px) {
+	-webkit-border-top-right-radius: $radius;
+	-webkit-border-top-left-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	-moz-border-radius-topleft: $radius;
+	border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+}
+
+/* @include borderRightRadius(4px); */
+@mixin borderRightRadius($radius: 4px) {
+	-webkit-border-top-right-radius: $radius;
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+/* @include borderBottomRadius(4px); */
+@mixin borderBottomRadius($radius: 4px) {
+	-webkit-border-bottom-right-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+/* @include borderLeftRadius(4px); */
+@mixin borderLeftRadius($radius: 4px) {
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+@mixin rounded {
+-moz-border-radius-topleft: 45px;
+-moz-border-radius-topright: 45px;
+-webkit-border-top-left-radius: 45px;
+-webkit-border-top-right-radius: 45px;
+border-top-left-radius: 45px;
+border-top-right-radius: 45px;
+-moz-border-radius-bottomleft: 45px;
+-moz-border-radius-bottomright: 45px;
+-webkit-border-bottom-left-radius: 45px;
+-webkit-border-bottom-right-radius: 45px;
+border-bottom-left-radius: 45px;
+border-bottom-right-radius: 45px;
+}
+@mixin roundedInput {
+-moz-border-radius-topleft: 8px;
+-moz-border-radius-topright: 8px;
+-webkit-border-top-left-radius: 8px;
+-webkit-border-top-right-radius: 8px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+-moz-border-radius-bottomleft: 8px;
+-moz-border-radius-bottomright: 8px;
+-webkit-border-bottom-left-radius: 8px;
+-webkit-border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+
+@mixin roundedLeaf {
+-moz-border-radius-topleft: 45px;
+-moz-border-radius-bottomright: 45px;
+-webkit-border-top-left-radius: 45px;
+-webkit-border-bottom-right-radius: 45px;
+border-top-left-radius: 45px;
+border-bottom-right-radius: 45px;
+}
+@mixin roundedTop {
+-moz-border-radius-topleft: 45px;
+-moz-border-radius-topright: 45px;
+-webkit-border-top-left-radius: 45px;
+-webkit-border-top-right-radius: 45px;
+border-top-left-radius: 45px;
+border-top-right-radius: 45px;
+}
+@mixin roundedBottom {
+-moz-border-radius-bottomleft: 45px;
+-moz-border-radius-bottomright: 45px;
+-webkit-border-bottom-left-radius: 45px;
+-webkit-border-bottom-right-radius: 45px;
+border-bottom-left-radius: 45px;
+border-bottom-right-radius: 45px;
+}
+@mixin roundedBLonly {
+-moz-border-radius-bottomleft: 45px;
+-webkit-border-bottom-left-radius: 45px;
+border-bottom-left-radius: 45px;
+}
+@mixin roundedBRonly {
+-moz-border-radius-bottomright: 45px;
+-webkit-border-bottom-right-radius: 45px;
+border-bottom-right-radius: 45px;
+}
+
+
+/*********************
+SHAPES
+*********************/
+
+
+
+
+/*********************
+TRANISTION
+*********************/
+
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 0.2s, $how: ease-out) {
+	-webkit-transition: $what $time $how;
+	   -moz-transition: $what $time $how;
+ 	    -ms-transition: $what $time $how;
+	     -o-transition: $what $time $how;
+	        transition: $what $time $how;
+}
+
+
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can 
+really slow down your CSS. Don't overdue it.
+*********************/
+
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+@mixin css-gradient($from: $darkgrey, $to: $lightergrey) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: -ms-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(top, $from, $to);
+}
+
+@mixin navGradient {
+background-image:-moz-linear-gradient(top, $dkpurple 0%, $medpurple 20%, $dkpurple 60%);
+background-image:-webkit-linear-gradient(top, $dkpurple 0%, $medpurple 20%, $dkpurple 60%);
+background-image:-o-linear-gradient(top, $dkpurple 0%, $medpurple 20%, $dkpurple 60%);
+background-image:-ms-linear-gradient(top, $dkpurple 0%, $medpurple 20%, $dkpurple 60%);
+background-image:linear-gradient(top, $dkpurple 0%, $medpurple 20%, $dkpurple 60%);
+}
+@mixin btnGradient {
+background-image:-moz-linear-gradient(top, $ltpurple 10%, $medpurple 60%);
+background-image:-webkit-linear-gradient(top, $ltpurple 10%, $medpurple 60%);
+background-image:-o-linear-gradient(top, $ltpurple 10%, $medpurple 60%);
+background-image:-ms-linear-gradient(top, $ltpurple 10%, $medpurple 60%);
+background-image:linear-gradient(top, $ltpurple 10%, $medpurple 60%);
+}
+@mixin formGradient {
+background-image: -webkit-gradient(linear, 0% 0%, 0% 12%, from(#999), to(#fff));
+background-image: -moz-linear-gradient(0% 12% 90deg, #fff, #999);
+}
+
+
+/*********************
+BOX SIZING
+*********************/
+
+/* @include boxSizing(border-box); */
+@mixin boxSizing($type: border-box) {
+	-webkit-box-sizing: $type;
+	   -moz-box-sizing: $type;
+		-ms-box-sizing: $type;
+	     -o-box-sizing: $type; 
+			box-sizing: $type; 
+}
+
+/*********************
+BOX SHADOW
+*********************/
+
+/* @include boxShadow(0 0 4px #444); */
+@mixin boxShadow($x: 0, $y: 0, $radius: 4px, $spread: 0, $color: rgba(0,0,0,0.5)) {
+	-webkit-box-shadow: $x $y $radius $spread $color;
+	   -moz-box-shadow: $x $y $radius $spread $color;
+		-ms-box-shadow: $x $y $radius $spread $color;
+	     -o-box-shadow: $x $y $radius $spread $color; 
+			box-shadow: $x $y $radius $spread $color; 
+}
+
+@mixin topShadow {
+-webkit-box-shadow: 0px -5px 5px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    0px -5px 5px rgba(50, 50, 50, 0.5);
+box-shadow:         0px -5px 5px rgba(50, 50, 50, 0.5);
+}
+@mixin bottomShadow {
+-webkit-box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    0px 5px 5px rgba(50, 50, 50, 0.5);
+box-shadow:         0px 5px 5px rgba(50, 50, 50, 0.5);
+}
+@mixin bottomShadowInset {
+-webkit-box-shadow: 0px -2px 2px rgba(50, 50, 50, 0.2) inset;
+-moz-box-shadow:    0px -2px 2px rgba(50, 50, 50, 0.2) inset;
+box-shadow:         0px -2px 2px rgba(50, 50, 50, 0.2) inset;
+}
+
+/*********************
+MULTIPLE BOX SHADOWS
+*********************/
+//*currently unused*
+/* @include box-shadow(5px, 5px, 10px, #000); */
+@mixin box-shadow($shadow-1,
+  $shadow-2: false, $shadow-3: false,
+  $shadow-4: false, $shadow-5: false,
+  $shadow-6: false, $shadow-7: false,
+  $shadow-8: false, $shadow-9: false)
+  {
+    $full: compact($shadow-1, $shadow-2, $shadow-3, $shadow-4,
+                   $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9);
+
+  -webkit-box-shadow: $full;
+     -moz-box-shadow: $full;
+      -ms-box-shadow: $full;
+       -o-box-shadow: $full;
+          box-shadow: $full;
+}
+
+/*********************
+TEXT SHADOWS
+*********************/
+
+@mixin texthighlight {
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+}
+@mixin textshadow {
+	text-shadow: 1px 1px 1px rgba(62,27,104,0.75);
+}
+
+/*********************
+BUTTONS
+*********************/
+
+.button, .button:visited {
+	border: $buttonborderwidth $buttonborderstyle $buttonbordercolor;
+	padding: 4px 12px;
+	color: $white;
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	margin-bottom: $gutterwidth;
+	line-height: $baselineheight;
+	@include textshadow;
+	@include css-gradient($ltpurple, darken($medpurple, 5%));
+	@include rounded;
+
+
+	&:hover, &:focus {
+		color: $white;
+	 	@include css-gradient(darken($medpurple, 5%), $ltpurple);
+	}
+	
+	&:active {
+		border: 1px solid darken($dkpurple, 13%);
+	  	border-top-color: darken($dkpurple, 20%);
+	 	border-left-color: darken($dkpurple, 20%);
+		@include css-gradient(darken($medpurple, 5%), darken($dkpurple, 10%));
+	}	
+}
+
+.shareIcons {
+	position: fixed;
+	top: 0;
+	right: 0;
+	float: right;
+	width: 50%;
+	margin: .5em;
+	span {float: right;}
+}

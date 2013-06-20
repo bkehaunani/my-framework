@@ -1,0 +1,232 @@
+/******************************************************************
+Site Name: Purple Paisley Productions
+Author: Brianna Kirkland
+
+Stylesheet: Site
+
+These are site-wide, device-independent, global styles. It's 
+called after the stylesheets that set styles for page elements.
+******************************************************************/
+
+
+/*********************
+VIEWPORTS
+*********************/
+
+@-webkit-viewport { 
+width : device-width; }
+
+@-moz-viewport { 
+width : device-width; }
+
+@-ms-viewport { 
+width : device-width; }
+
+@-o-viewport { 
+width : device-width; }
+
+@viewport { 
+width : device-width; }
+
+/*********************
+ROOT STYLES
+*********************/
+
+html {
+font-size : $basefontsize;
+-webkit-overflow-scrolling : touch;
+-webkit-tap-highlight-color : lighten($basecolor, 75%);
+-webkit-text-size-adjust : 100%;
+-ms-text-size-adjust : 100%; }
+
+body {
+background: white url(../img/stripebg.jpg) fixed;
+margin : 0;
+padding : 0;
+width : 100%;
+font-family : $basefont;
+line-height : $baselineheight;
+color : $textcolor; }
+
+
+/*********************
+TEXTURE
+*********************/
+
+::selection {
+	background: lighten($ltpurple, 30%);
+	color: $black;
+}
+::-moz-selection {
+	background: lighten($ltpurple, 30%);
+	color: $black;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a:link,
+a:visited {
+	color: $linkcolor;
+	text-decoration: none;
+	@include transition;
+}
+
+a:hover,
+a:active {
+	color: $linkcolorhover;
+	text-decoration: none;
+}
+
+
+/*********************
+LAYOUT                 ----------------- Heavily examine and modify for efficiency  ----- styles pasted in as default
+Notes: target ÷ context = result, express the results in percentages by moving the decimal over 2 spaces to the right ->
+*********************/
+header {
+	float: left;
+	position: absolute;
+	top: .66666667em;
+	left: 1em;
+	background: white;
+	height:224px; /* 183/960 */
+	width: 380px; /* 300/960 */
+	/* margin: 2em 4em 0; */
+	padding: 10px;
+	border: 2px solid $dkpurple;
+	@include bottomShadow;
+	@include rounded;
+	h1{text-indent: -9999px; background-image:url(../img/paisleyLogo.png); height:224px; width:380px; margin-top:-8px; margin-left:-3px;}
+}
+nav {
+/* float: left; */
+	height: 2.5em;
+	width: 100%;
+	border-top: $stich;
+	border-bottom: $stich;
+	box-shadow: 0 0 0 6px $dkpurple;
+	box-sizing: padding-box;
+	background: $dkpurple;
+	@include navGradient;
+	margin: 6em 0 0 0;
+	padding: 1em 0;
+	clear: both;
+	ul {float: right; text-align: center; list-style-type: none; padding: .25em; /* margin-top: -.5em; */ margin-right:3em;}
+	li {display: inline-block; text-decoration: none; font-family: "fontin_bold"; font-size: 1.25em; color: white; line-height: 1.25em; letter-spacing:.03em; text-transform:uppercase;}
+}
+
+nav a:link {
+	color: white;
+	text-decoration: none;
+	border-bottom: 0;
+	
+}
+nav a:visited {
+	color: white;
+	text-decoration: none;
+	border-bottom: 0;
+}
+nav a:hover {
+	color: $pink;
+	text-decoration: none;
+	border-bottom: 0;
+}
+nav a:active {
+	color: $ltpurple;
+	text-decoration: none;
+	border-bottom: 0;
+}
+nav a.current {
+	color: $ltpurple;
+	cursor: pointer;
+	text-decoration: none;
+}
+// MAIN COINTAINER
+section {
+	float: left;
+	background: url(../img/flourish.png) no-repeat right bottom, url(../img/lgFlourishBG.png) no-repeat top left, white;
+	width: 94%;
+	margin: .25em 4em 2em;
+	padding: 0;
+	border: 2px solid $dkpurple;
+	@include roundedBottom;
+	@include bottomShadow;
+}
+
+article {
+	float: left;
+	width: 58%;
+	margin: 4.75em 0 2.5em 2.5em;
+	padding: $gutterwidth;
+	background: rgba(255, 255, 255, .6); 
+	@include rounded;
+	/*  h2 {clear: both;} */
+}
+/*
+article p {
+	margin-bottom: 1.5em;
+	clear: both;
+}
+*/
+#slider {
+	margin: 0 auto;
+}
+// ASIDES 
+aside {
+	float: right;
+	position: relative;
+	width: 30%;
+	margin: 1.5em 2.5em 30% 0;
+	padding: $gutterwidth/2;
+	background: rgba(185, 178, 216, .8);
+	@include rounded;
+	@include bottomShadowInset;
+}
+
+
+// FOOTER
+footer {
+	width: 100%;
+	height: 1.75em;
+	clear: both;
+	/* overflow: hidden; */
+}
+
+footer p {
+	margin: 0 auto;
+	width: 60%;
+	font-size: .75em;
+	line-height: 1em;
+	text-align: center;
+}
+
+.students {
+	float: left;
+	width: 20%;
+	margin: -1em 4em 0 0;
+	/* padding: .2em 0; */
+	text-align: center;
+}
+.students a {
+	color: $dkpurple;
+}
+
+
+
+/*********************
+VENDOR-SPECIFIC  
+*********************/
+
+
+
+/*********************
+ MODERNIZR 
+*********************/
+
+
+
+/*********************
+TEMPLATE SPECIFICS
+*********************/
+

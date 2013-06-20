@@ -1,0 +1,217 @@
+/******************************************************************
+Site Name: Purple Paisley Productions
+Author: Brianna Kirkland
+
+Stylesheet: Typography
+
+Sitewide typography styles. Global definitions - device independent.
+It's called right after setting the variables and mixins.
+******************************************************************/
+	
+
+
+/* 
+use the best ampersand 
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+  font-style: italic;
+}
+
+
+/*********************
+HEADINGS
+*********************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin : 0;
+font-family : $baseheadingfont;
+font-weight : $baseheadingfontweight;
+color : $baseheadingfontcolor;
+text-rendering : optimizelegibility; }
+
+h1 small,
+h2 small {
+font-weight : normal;
+color : $lightgrey; }
+
+h1,
+.h1 {
+margin-bottom : $baselineheight / 2;
+line-height : 1.2; 
+font-size: $basefontsize * 2;  //  32/16 = 2
+@include texthighlight; }
+
+h2,
+.h2 {
+font-family: $baseheadingfont;
+margin-bottom : $baselineheight / 2;
+font-size: $basefontsize * 1.5;  //  24/16 = 1.5
+line-height : 1.2; }
+
+h2.tagline {
+font-family: "fontin_italic";
+/* font-size: $basefontsize * 1.75;  //  28/16 = 1.75 */
+font-size: 2.25em;
+text-align: center;
+@include texthighlight;
+}
+
+
+h3,
+.h3 {
+margin-bottom : $baselineheight / 1.5;
+font-family: "fontin_bold";
+font-size: $basefontsize * 1.3125;  //  21/16 = 1.3125
+line-height : 1.3; }
+
+h4,
+.h4 {
+font-family: "fontin_smallcaps";
+/* margin-bottom : $baselineheight; */
+font-size: $basefontsize * 1.125;  //  18/16 = 1.125
+line-height : 1.25; }
+
+aside h4 {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+h5,
+.h5 {
+font-size: $basefontsize;  // 16 px
+margin-bottom : $baselineheight; }
+
+h6,
+.h6 {
+font-family: "fontin_smallcaps";
+margin-bottom : $baselineheight;
+font-size: $basefontsize * 0.875;  //  14/16 = 0.875
+font-weight : normal;
+letter-spacing : 1px;
+text-transform : uppercase; }
+
+
+/*********************
+CONTENT STYLES
+*********************/
+p,
+ol,
+ul,
+dl,
+address {
+margin-bottom : $baselineheight;
+font-size: $basefontsize * 0.875;  //  14/16 = 0.875
+line-height : $baselineheight; }
+
+small {
+font-size: $basefontsize * 0.625;  //  10/16 = 0.625 
+}
+
+ul,
+ol {
+margin : 0 0 $baselineheight $gutterwidth;
+padding : 0 0 0 $gutterwidth; }
+
+li ul,
+li ol {
+margin : 0;
+font-size: $basefontsize; }
+
+// blockquote
+
+blockquote  {
+margin : 0 0 $baselineheight #{-$gutterwidth};
+padding-left : $gutterwidth;
+border-left : 2px solid $bordercolor;
+font-family : $altfont;
+font-style : normal; }
+
+q {
+quotes : none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content : '';
+content : none; }
+
+cite {
+font-style : normal; }
+
+// definition lists
+
+dl,
+dd {
+margin-bottom : $baselineheight;  }
+
+dt {
+font-weight : bold; }
+
+.dl-horizontal {
+
+dt {
+float : left;
+clear : left;
+width : 20.25%;
+text-align : right; }
+
+dd {
+margin-left : 22.78%; }
+}
+
+// text-level
+
+abbr[title] {
+border-bottom : 1px dotted $bordercolor;
+cursor : help; }
+
+b, strong {
+font-weight : bold; }
+
+dfn {
+font-style : italic; }
+
+ins {
+background-color : lighten($basecolor, 75%);
+color : $textcolor;
+text-decoration : none; }
+
+mark {
+background-color : lighten($basecolor, 75%);
+color : $textcolor;
+font-style : italic;
+font-weight : bold; }
+
+pre,
+code,
+kbd,
+samp {
+font-family : $codefont;
+font-size: $basefontsize * 0.875;  //  14/16 = 0.875
+line-height : $baselineheight; }
+
+pre {
+white-space : pre;
+white-space : pre-wrap;
+word-wrap : break-word; }
+
+sub,
+sup {
+position : relative;
+font-size: $basefontsize * 0.75;  //  12/16 = 0.75
+line-height : 0;
+vertical-align : baselineheight; }
+
+sup {
+top : -.5em; }
+
+sub {
+bottom : -.25em; }
