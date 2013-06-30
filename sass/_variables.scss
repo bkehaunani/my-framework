@@ -77,11 +77,11 @@ $basefont : $sans-serif;
 $basefontsize : 100%;
 $baselineheight : 1.5em;
 
-$baseheadingfont : "fontin_sans_regular", Cambria, Georgia, Times, "Times New Roman", serif;
-$baseheadingfontweight : bold;
+$baseheadingfont : "fontin_bold", Cambria, Georgia, Times, "Times New Roman", serif;
+$baseheadingfontweight : normal;
 $baseheadingfontcolor : inherit;
 
-$altfont : $sans-serif;
+$altfont : $serif;
 $altlineheight : 1.35em;
 
 $codefont : Monaco, Courier New, monospace;
@@ -179,7 +179,7 @@ LAYOUT
 *********************/
 
 $baseline : $baselineheight;
-$gutterwidth : 1em;
+$gutterwidth : $baseline / 2;
 
 
 

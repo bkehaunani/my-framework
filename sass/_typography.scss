@@ -53,15 +53,7 @@ h2,
 font-family: $baseheadingfont;
 margin-bottom : $baselineheight / 2;
 font-size: $basefontsize * 1.5;  //  24/16 = 1.5
-line-height : 1.2; }
-
-h2.tagline {
-font-family: "fontin_italic";
-/* font-size: $basefontsize * 1.75;  //  28/16 = 1.75 */
-font-size: 2.25em;
-text-align: center;
-@include texthighlight;
-}
+/* line-height : 1.2; */ }
 
 
 h3,
@@ -107,7 +99,7 @@ ul,
 dl,
 address {
 margin-bottom : $baselineheight;
-font-size: $basefontsize * 0.875;  //  14/16 = 0.875
+font-size: $basefontsize * 1.125;  //  18/16 = 1.125
 line-height : $baselineheight; }
 
 small {
