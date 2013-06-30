@@ -12,6 +12,7 @@ called after the stylesheets that set styles for page elements.
 /*********************
 VIEWPORTS
 *********************/
+/*
 
 @-webkit-viewport { 
 width : device-width; }
@@ -27,6 +28,7 @@ width : device-width; }
 
 @viewport { 
 width : device-width; }
+*/
 
 /*********************
 ROOT STYLES
@@ -85,33 +87,19 @@ LAYOUT                 ----------------- Heavily examine and modify for efficien
 Notes: target ÷ context = result, express the results in percentages by moving the decimal over 2 spaces to the right ->
 *********************/
 header {
-	float: left;
-	position: absolute;
-	top: .66666667em;
-	left: 1em;
-	background: white;
-	height:224px; /* 183/960 */
-	width: 380px; /* 300/960 */
-	/* margin: 2em 4em 0; */
-	padding: 10px;
-	border: 2px solid $dkpurple;
-	@include bottomShadow;
-	@include rounded;
-	h1{text-indent: -9999px; background-image:url(../img/paisleyLogo.png); height:224px; width:380px; margin-top:-8px; margin-left:-3px;}
+	width: 100%;
+	&:after {content:""; height: 2.5em; margin: 4em 0 $gutterwidth 0; border-top: $stich; border-bottom: $stich; box-shadow: 0 0 0 6px $dkpurple; background: $dkpurple; @include navGradient;}
+	h1{background:url(../img/logo.png) no-repeat; width: 270px; height:162px;}
 }
 nav {
-/* float: left; */
-	height: 2.5em;
-	width: 100%;
-	border-top: $stich;
+
+	/*
+border-top: $stich;
 	border-bottom: $stich;
 	box-shadow: 0 0 0 6px $dkpurple;
-	box-sizing: padding-box;
 	background: $dkpurple;
 	@include navGradient;
-	margin: 6em 0 0 0;
-	padding: 1em 0;
-	clear: both;
+*/
 	ul {float: right; text-align: center; list-style-type: none; padding: .25em; /* margin-top: -.5em; */ margin-right:3em;}
 	li {display: inline-block; text-decoration: none; font-family: "fontin_bold"; font-size: 1.25em; color: white; line-height: 1.25em; letter-spacing:.03em; text-transform:uppercase;}
 }

@@ -74,10 +74,10 @@ $serif:             "fontin_regular", Cambria, Georgia, Times, "Times New Roman"
 
 
 $basefont : $sans-serif;
-$basefontsize : 16;
+$basefontsize : 100%;
 $baselineheight : 1.5em;
 
-$baseheadingfont : "fontin_regular", Cambria, Georgia, Times, "Times New Roman", serif;
+$baseheadingfont : "fontin_sans_regular", Cambria, Georgia, Times, "Times New Roman", serif;
 $baseheadingfontweight : bold;
 $baseheadingfontcolor : inherit;
 
@@ -179,7 +179,7 @@ LAYOUT
 *********************/
 
 $baseline : $baselineheight;
-$gutterwidth : 24px;
+$gutterwidth : 1em;
 
 
 

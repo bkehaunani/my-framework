@@ -48,15 +48,17 @@ Here we organize our media queries and setup our main stylesheet.
 BASE (MOBILE) SIZE 
 ******************************************************************/
 
-@import "base";
+/* @import "base"; */
 
 /******************************************************************
 TABLET & SMALLER LAPTOPS
 ******************************************************************/
 
+/*
 @media only screen and (min-width: 768px) {
 	@import "768up";
-} /* end of media query */
+}
+*/ /* end of media query */
 
 /******************************************************************
 DESKTOP 
@@ -65,18 +67,22 @@ in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 ******************************************************************/
 
+/*
 @media only screen and (min-width: 1030px) {
 	@import "1030up";
-} /* end of media query */
+} 
+*//* end of media query */
 
 /******************************************************************
 LARGE VIEWING SIZE 
 This is for the larger monitors and possibly full screen viewers.
 ******************************************************************/
 
+/*
 @media only screen and (min-width: 1382px) {
 	@import "1382up";
-} /* end of media query */
+}
+*/ /* end of media query */
 
 /******************************************************************
 RETINA (2x RESOLUTION DEVICES)
@@ -84,11 +90,13 @@ This applies to the retina iPhone (4s) and iPad (2,3) along with
 other displays with a 2x resolution. 
 ******************************************************************/
 
+/*
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min--moz-device-pixel-ratio: 1.5),
        only screen and (min-device-pixel-ratio: 1.5) {
 	@import "2x"; 
-} /* end of media query */
+}
+*/ /* end of media query */
 
 
 /******************************************************************
