@@ -89,7 +89,7 @@ Notes: target ÷ context = result, express the results in percentages by moving 
 header {
 	width: 85.4166666667%; // 820/960
 	margin: 0 auto;
-	h1{background:url(../img/logo.png) no-repeat; width: 32.926829268293; height:162px; display: inline-block;} // width=270/820
+	h1{background:url(../img/logo.png) no-repeat; width: 32.926829268293%; height:162px; display: inline-block; text-indent: -9999px; float: left;} // width=270/820
 }
 .tagline {
 float:right;;

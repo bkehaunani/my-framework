@@ -369,12 +369,32 @@ BUTTONS
 	}	
 }
 
-.shareIcons {
-	position: fixed;
-	top: 0;
-	right: 0;
-	float: right;
-	width: 50%;
-	margin: .5em;
-	span {float: right;}
+.cta .button {
+	border: $buttonborderwidth $buttonborderstyle $green;
+	padding: $gutterwidth;
+	color: $white;
+	display: inline-block;
+	font-size: $basefontsize * 1.5;  //  24/16 = 1.5	font-weight: inherit;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-bottom: $gutterwidth;
+	line-height: $baselineheight;
+	@include textshadow;
+	@include css-gradient($green, darken($green, 5%));
+	@include rounded;
+
+
+	&:hover, &:focus {
+		color: $white;
+	 	@include css-gradient(darken($green, 5%), $green);
+	}
+	
+	&:active {
+		border: 1px solid darken($green, 13%);
+	  	border-top-color: darken($green, 20%);
+	 	border-left-color: darken($green, 20%);
+		@include css-gradient(darken($green, 5%), darken($green, 10%));
+	}	
+
 }
