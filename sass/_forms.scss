@@ -299,7 +299,7 @@ input[type="text"] {
     font-size: 1.2em;
     line-height: 1.4em;
 	background: white;
-	@include roundedInput;
+	@include borderRadius(4px); 
 	@include formGradient;
 }
 input[type="checkbox"] {
@@ -309,7 +309,7 @@ input[type="checkbox"] {
 	direction: inline;
 
 	background: white;
-	@include roundedInput;
+	@include borderRadius(4px); 
 	@include formGradient;
 }
 select {
@@ -332,7 +332,7 @@ input[type="reset"] {
     line-height: 1.4em;
     color: white;
 	background: $medpurple;
-	@include rounded;
+	/* @include rounded; */
 	@include btnGradient;
 	@include bottomShadowInset;
 }
