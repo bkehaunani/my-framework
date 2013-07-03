@@ -52,7 +52,7 @@ $bordercolor    : lighten($basecolor, 60%);
 
 // Links
 
-$linkcolor 		    : $rgbpink;   // original template used RGB colors here
+$linkcolor 		    : $rgbgreen;   // original template used RGB colors here
 $linkcolorhover 	: darken($linkcolor, 10);
 $linkcolorvisited   : darken($linkcolorhover, 10);
 $linkcolorfocus 	: darken($linkcolorvisited, 10);

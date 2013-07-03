@@ -334,7 +334,7 @@ input[type="reset"] {
 	background: $medpurple;
 	/* @include rounded; */
 	@include btnGradient;
-	@include bottomShadowInset;
+	/* @include bottomShadowInset; */
 }
 
 /*********************
