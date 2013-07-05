@@ -296,7 +296,7 @@ BUTTONS
 	font-weight: inherit;
 	text-decoration: none;
 	cursor: pointer;
-	margin-bottom: $gutterwidth;
+	margin-bottom: $gutterwidth / 2;
 	line-height: $baselineheight;
 	@include textshadow;
 	@include css-gradient($ltpurple, darken($medpurple, 5%));

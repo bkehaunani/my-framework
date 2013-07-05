@@ -115,7 +115,6 @@ text-align: center;
 @include borderRadius(25px);
 @include tagGradient;
 @include bottomShadow;
-/* @include bottomShadowInset; */
 
 h1 {
 	font-family: "fontin_italic";
@@ -125,6 +124,7 @@ h1 {
 	text-align: center;
 	@include texthighlight; }
 	a {
+		font-size: $basefontsize * .675;
 		color: white;
 		border-bottom: none;
 		text-transform: uppercase;
@@ -164,7 +164,7 @@ nav {
 			-moz-transform: scale(1.1);
 			-o-transform: scale(1.1);
 			-ms-transform: scale(1.1);
-			transform: scale(1.1) translateY(3px);
+			transform: scale(1.1) translateY(1px);
 			@include textshadow; }
 		/* @include texthighlight;  */
 			a:link,
